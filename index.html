@@ -1,0 +1,274 @@
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+        
+        <style>
+body {text-align: center;}
+body {
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("233GearscoutlogoA.png");
+
+}
+input[type=checkbox] {
+    zoom: 1.5;
+}
+
+h1 {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: white;
+    background-color: #FE5000;
+    
+}
+p  {
+    font: 
+}
+
+.defaultTextBox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: gray;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+        <h2><font face='Segoe UI'  color = white>2018 GearScoutWeb 2018 Alpha</h2>
+
+<button class="button" onclick="sum()"><span>Update Total</span> </button>
+<input class='defaultTextBox' type="text" id="tot" />
+
+</head>
+<body>
+    
+
+<body style="background-color:#02243E;">	
+
+
+  
+<script>
+    var r = 1;
+    function mobility() {
+        document.getElementById('climb').value = r
+                
+    }
+    var i = 0;
+    function buttonClick() {
+    		i++;
+        document.getElementById('inc').value = i;
+        }
+    function buttonClickA() {
+    		i--;
+        document.getElementById('inc').value = i;
+        }
+   
+      var w = 0;
+    function buttonClickC() {
+    		w++;
+        document.getElementById('inc1').value = w;
+        }
+    function buttonClickD() {
+    		w--;
+        document.getElementById('inc1').value = w;
+        }
+        
+    var b = 0;
+    function buttonClickE() {
+    		b++;
+        document.getElementById('inc2').value = b;
+        }
+    function buttonClickF() {
+    		b--;
+        document.getElementById('inc2').value = b;
+        }
+        
+        var c = 0;
+    function buttonClickG() {
+    		c++;
+        document.getElementById('inc3').value = c;
+        }
+    function buttonClickH() {
+    		c--;
+        document.getElementById('inc3').value = c;
+        }
+    var d = 0;
+    function buttonClickI() {
+    		d++;
+        document.getElementById('inc4').value = d;
+        }
+    function buttonClickJ() {
+    		d--;
+        document.getElementById('inc4').value = d;
+        }
+        
+     var aa = 0;
+    function buttonClickK() {
+    		aa++;
+        document.getElementById('inc5').value = aa;
+        }
+    function buttonClickL() {
+    		aa--;
+        document.getElementById('inc5').value = aa;
+        }
+    var bb = 0;
+    function buttonClickM() {
+    		bb++;
+        document.getElementById('inc6').value = bb;
+        }
+    function buttonClickN() {
+    		bb--;
+        document.getElementById('inc6').value = bb;
+        }
+    function sum() {
+    
+            var txtFirstNumberValue = document.getElementById('inc').value;
+                var txtSecondNumberValue = document.getElementById('inc1').value;
+                    var txtThirdNumberValue = document.getElementById('inc2').value;
+                        var txtFourthNumberValue = document.getElementById('inc3').value;
+                        var txtFithNumberValue = document.getElementById('inc4').value;
+                        var txtSixthNumberValue = document.getElementById('inc5').value;
+                        var txtSeventhNumberValue = document.getElementById('inc6').value;
+                            var result = parseInt(txtFirstNumberValue) + parseInt((txtSecondNumberValue)*2) + parseInt((txtThirdNumberValue)*3) + parseInt((txtFourthNumberValue)*8) + parseInt((txtFithNumberValue)*40)
+                                    + parseInt(txtSixthNumberValue) + parseInt(txtSeventhNumberValue);
+                                if (!isNaN(result)) {
+                                    document.getElementById("tot").value = result;
+                        
+            }
+            
+        }
+       
+</script>
+
+
+<h1><font face='Segoe UI' color = white >
+    TeleOp
+</h1>
+
+
+<h2><font face='Segoe UI' color = white>
+    Low Goal Small
+</h2>
+<button class="button" onclick="buttonClick()">Add</button>
+<input class='defaultTextBox' type="text" id="inc" value="0">
+<button class="button" onclick="buttonClickA()">Subtract</button>
+
+<h2><font face='Segoe UI' color = white>
+    Low Goal Large
+</h2>
+<button class="button" onclick="buttonClickE()">Add</button>
+<input class='defaultTextBox' type="text" id="inc2" value="0">
+<button class="button" onclick="buttonClickF()">Subtract</button>
+
+<h2><font face='Segoe UI' color = white>
+    High Goal Small
+</h2>
+<button class="button" onclick="buttonClickC()">Add</button>
+<input class='defaultTextBox' type="text" id="inc1" value="0">
+<button class="button" onclick="buttonClickD()">Subtract</button>
+
+<h2><font face='Segoe UI' color = white>
+    High Goal Large
+</h2>
+<button class="button" onclick="buttonClickG()">Add</button>
+<input class='defaultTextBox' type="text" id="inc3" value="0">
+<button class="button" onclick="buttonClickH()">Subtract</button>
+
+<h2><font face='Segoe UI' color = white>
+    Gear Raise
+</h2>
+<button class="button" onclick="buttonClickI()">Add</button>
+<input class='defaultTextBox' type="text" id="inc4" value="0">
+<button class="button" onclick="buttonClickJ()">Subtract</button>
+
+<h2><font face='Segoe UI' color = white>
+    Total Alliance kPa
+</h2>
+<input class='defaultTextBox' type="text" id="pressure" value="0">
+<br><br>
+
+    <label><font face='Segoe UI' color = white>Climbed</label>
+            			<div class="span3">
+                                
+  							<input value="50" type="checkbox" class="climb" data-toggle="checkbox">
+						</label>
+
+<h1> <font face='Segoe UI' >  Auto </h1>
+<h2><font face='Segoe UI' color = white>
+    Low Goal (Note: 3 balls equal 1 score point)
+</h2>
+<button class="button" onclick="buttonClickK()">Add</button>
+<input class='defaultTextBox' type="text" id="inc5" value="0">
+<button class="button" onclick="buttonClickL()">Subtract</button>
+<h2><font face='Segoe UI' color = white>
+    High Goal
+</h2>
+<button class="button" onclick="buttonClickM()">Add</button>
+<input class='defaultTextBox' type="text" id="inc6" value="0">
+<button class="button" onclick="buttonClickN()">Subtract</button>
+<br><br>
+<label><font face='Segoe UI' color = white>Mobility</label>
+            			<div class="span3">
+                                
+  							<input value="50" type="checkbox" class="climb" >
+						</label>
+                                    <br><br>
+<label><font face='Segoe UI' color = white>Gear Raised</label>
+            			<div class="span3">
+                                
+  							<input value="50" type="checkbox" class="climb" >
+						</label>
+
+<h1> <font face='Segoe UI' >  Notes </h1>
+<br>
+<p><font face='Segoe UI' color = white>Type Notes Here:</p>
+<br><br>
+<textarea rows="20" cols="50" ></textarea>
+<br>
+</body>
+</html>

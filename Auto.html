@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+  
+    <head>
+          <meta charset="utf-8">
+  <meta name="description" content="GearScout 2018">
+  <meta name="author" content="The Gear It Forward App Programmmers">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+        
+        <style>
+body {text-align: center;}
+body {
+    background-image: url("2338 Gear it Forward Logo.png");
+}
+</style>
+       
+<h1><font color = white>Autonomous</h1>
+
+</head>
+<body>
+    <body style="background-color:#02243E;">
+        <p>
+<a href="index.html" target="_self">Link to Main Page</a>
+</p>
+<script>
+    localStorage.setItem("x", "i");
+      var i = 1;
+    function buttonClick() {
+    		i++;
+        document.getElementById('inc').value = i;
+        }
+    function buttonClickA() {
+    		i--;
+        document.getElementById('inc').value = i;
+        }
+   
+</script>
+<button onclick="buttonClick()">Add</button>
+<input type="text" id="inc" value="0">
+<button onclick="buttonClickA()">Subtract</button>
+</body>
+</html>
